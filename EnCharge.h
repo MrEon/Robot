@@ -6,8 +6,13 @@
 #define ROBOT_ENCHARGE_H
 
 
+#include "Etat.h"
+
 class EnCharge: public Etat {
 
+public:
+    EnCharge() { }
+    virtual ~EnCharge() { }
 };
 
 

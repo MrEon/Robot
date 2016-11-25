@@ -7,7 +7,15 @@
 
 
 class Position {
+public:
+    int x, y;
 
+    Position(int x, int y) : x(x), y(y) { }
+
+    void move(int X, int Y){
+        x = X;
+        y = Y;
+    }
 };
 
 

@@ -11,10 +11,19 @@
 
 class Fige: public Etat
 {
+private:
+    Etat vieilEtat;
 public:
-    Fige(){ }
-    Fige figer(){
+    Fige(Etat etat) : vieilEtat(etat){ }
+
+    ~Fige() { }
+
+    Etat figer(Etat etat){
         throw figeException();
+    }
+
+    Etat repartir(){
+        return vieilEtat;
     }
 };
 

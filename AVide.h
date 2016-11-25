@@ -10,6 +10,10 @@
 
 class AVide : public EnRoute{
 
+public:
+    AVide() { }
+
+    ~AVide() { }
 };
 
 

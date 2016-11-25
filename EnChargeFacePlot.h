@@ -6,7 +6,14 @@
 #define ROBOT_ENCHARGEFACEPLOT_H
 
 
+#include "EnRoute.h"
+
 class EnChargeFacePlot: public EnRoute {
+
+
+public:
+    EnChargeFacePlot() { }
+    virtual ~EnChargeFacePlot() { }
 
 };
 
