@@ -4,11 +4,11 @@
 
 #include "Robot.h"
 void Robot::saisir(const Objet &o) {
-   this->etat = etat.saisir();
+    this->etat = etat.saisir();
 }
 void Robot::figer() {
-   this->etat = etat.figer();
+    this->etat = etat.figer();
 }
 void Robot::repartir() {
-   this->etat = etat.repartir();
+    this->etat = etat.repartir();
 }
