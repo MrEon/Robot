@@ -21,7 +21,7 @@ private:
     Plot *plot;
 
 public:
-    Robot(string direction = "nord", Position position = Position()): direction(direction), position(position){
+    Robot(string direction = "nord", Position position = Position(0, 0)): direction(direction), position(position){
         etat = AVide();
         objet = nullptr;
         plot = nullptr;
@@ -29,10 +29,10 @@ public:
 
     void avancer(int x, int y);
     void tourner(string new_dir);
-    void saisir(const Objet &o);
+    void saisir(Objet &o);
     void poser();
     int peser();
-    void rencontrerPlot(const Plot &p);
+    void rencontrerPlot(Plot &p);
     int evaluerPlot();
     void figer();
     void repartir();

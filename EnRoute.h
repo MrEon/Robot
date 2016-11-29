@@ -10,9 +10,18 @@
 #include "Fige.h"
 
 class EnRoute: public Etat {
-    virtual Etat saisir();
-    virtual Fige figer();
-    virtual Etat repartir();
+
+public:
+    EnRoute() { }
+
+    ~EnRoute() { }
+
+
+    virtual Etat saisir(){}
+    virtual Etat figer(Etat etat){
+        return Fige(etat);
+    };
+    virtual Etat repartir(){}
 };
 
 

@@ -10,6 +10,9 @@
 
 class AVideFacePlot: public EnRoute {
 public:
+    AVideFacePlot() { }
+    virtual ~AVideFacePlot() { }
+
     int evaluerPlot();
     Etat saisir();
 };

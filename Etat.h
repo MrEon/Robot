@@ -7,24 +7,28 @@
 
 #include "chargeException.h"
 #include "actifException.h"
-#include "Fige.h"
+#include <iostream>
+#include <map>
+
+using namespace std;
 
 class Etat {
+private:
+    map<string, Etat*> &etats();
 
 public:
     Etat() { }
-
-    virtual Etat saisir(){
+    ~Etat() { }
+    Etat saisir(){
         throw chargeException();
     }
 
-    virtual Fige figer(){
-        return Fige();
-    }
+    virtual Etat figer(Etat etat){}
 
-    virtual Etat repartir(){
+    Etat repartir(){
         throw actifException();
     }
+
 };
 
 

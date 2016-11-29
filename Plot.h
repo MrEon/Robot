@@ -8,12 +8,12 @@
 
 class Plot {
 private:
-    int taille;
+    int hauteur;
 public:
-    Plot(int taille = 100): taille(taille){ }
+    Plot(int taille = 100): hauteur(taille){ }
 
     int evaluerPlot(){
-        return taille;
+        return hauteur;
     }
 };
 
