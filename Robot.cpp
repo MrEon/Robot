@@ -32,6 +32,4 @@ void Robot::afficher() {
     cout<<"Direction: "<< this->direction<<endl;
     cout<<"Position: ("<< this->position.x << ", "<<this->position.y<<")"<<endl;
     //cout<<"Etat: "<<this->etat.afficher()<<endl;
-
-
 }
