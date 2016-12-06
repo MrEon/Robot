@@ -3,3 +3,10 @@
 //
 
 #include "EnCharge.h"
+
+EnCharge* EnCharge::singleton = new EnCharge();
+
+EnCharge EnCharge::instance()
+{
+    return *singleton;
+}

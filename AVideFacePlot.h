@@ -9,10 +9,15 @@
 #include "EnRoute.h"
 
 class AVideFacePlot: public EnRoute {
-public:
-    AVideFacePlot() { }
-    virtual ~AVideFacePlot() { }
 
+protected:
+    AVideFacePlot() { }
+
+private:
+    static AVideFacePlot* singleton;
+
+public:
+    static AVideFacePlot instance();
     int evaluerPlot();
     Etat saisir();
 };

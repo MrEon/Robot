@@ -10,9 +10,15 @@
 
 class EnCharge: public Etat {
 
-public:
+protected:
     EnCharge() { }
-    virtual ~EnCharge() { }
+
+private:
+    static EnCharge* singleton;
+
+public:
+    static EnCharge instance();
+
 };
 
 

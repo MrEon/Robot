@@ -11,6 +11,7 @@ using std::string;
 class Invocateur {
 private:
     string cmd;
+    string arr [];
 public:
     Invocateur(string cmd);
     void parseCommand();
@@ -18,6 +19,7 @@ public:
     int x();
     int y();
     string dir();
+    void split();
 };
 
 #endif //ROBOT_INVOCATEUR_H

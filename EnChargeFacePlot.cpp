@@ -3,3 +3,10 @@
 //
 
 #include "EnChargeFacePlot.h"
+
+EnChargeFacePlot* EnChargeFacePlot::singleton = new EnChargeFacePlot();
+
+EnChargeFacePlot EnChargeFacePlot::instance()
+{
+    return *singleton;
+}

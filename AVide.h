@@ -10,10 +10,14 @@
 
 class AVide : public EnRoute{
 
-public:
+protected:
     AVide() { }
 
-    ~AVide() { }
+private:
+    static AVide* singleton;
+
+public:
+    static AVide instance();
 };
 
 

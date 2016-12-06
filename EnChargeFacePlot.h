@@ -10,10 +10,15 @@
 
 class EnChargeFacePlot: public EnRoute {
 
+protected:
+    EnChargeFacePlot() { }
+
+private:
+    static EnChargeFacePlot* singleton;
 
 public:
-    EnChargeFacePlot() { }
-    virtual ~EnChargeFacePlot() { }
+    static EnChargeFacePlot instance();
+
 
 };
 

@@ -4,8 +4,15 @@
 
 #include "AVideFacePlot.h"
 
+AVideFacePlot* AVideFacePlot::singleton = new AVideFacePlot();
+
 int AVideFacePlot::evaluerPlot() { }
 
-::Etat AVideFacePlot::saisir() {
-    return EnCharge();
+Etat AVideFacePlot::saisir() {
+    return EnCharge::instance();
+}
+
+AVideFacePlot AVideFacePlot::instance()
+{
+    return *singleton;
 }
