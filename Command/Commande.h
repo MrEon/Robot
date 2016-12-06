@@ -7,7 +7,9 @@
 
 class Commande {
 public:
-    virtual void execute();
+    Commande() { }
+    ~Commande() { }
+    virtual void execute() { }
 };
 
 #endif //ROBOT_COMMANDE_H

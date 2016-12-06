@@ -22,7 +22,7 @@ private:
 
 public:
     Robot(string direction = "nord", Position position = Position(0, 0)): direction(direction), position(position){
-        etat = AVide();
+        etat = AVide::instance();
         objet = nullptr;
         plot = nullptr;
     }

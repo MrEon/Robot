@@ -7,15 +7,13 @@
 
 #include "chargeException.h"
 #include "actifException.h"
+#include "Plot.h"
 #include <iostream>
 #include <map>
 
 using namespace std;
 
 class Etat {
-private:
-    map<string, Etat*> &etats();
-
 public:
     Etat() { }
     ~Etat() { }
@@ -24,6 +22,13 @@ public:
     }
 
     virtual Etat figer(Etat etat){}
+    virtual void avancer(int x, int y){};
+    virtual void tourner(string direction){};
+    virtual Etat poser(){};
+    virtual int peser(){};
+    virtual void rencontrerPlot(Plot p){};
+    virtual int evaluerPlot(){};
+    virtual Etat figer();
 
     Etat repartir(){
         throw actifException();

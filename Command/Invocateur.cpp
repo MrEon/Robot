@@ -13,7 +13,7 @@
 
 Invocateur::Invocateur(string cmd) {
     this->cmd = cmd;
-    split();
+    splitCmd();
 }
 
 void Invocateur::parseCommand() {
@@ -29,51 +29,44 @@ void Invocateur::parseCommand() {
 
 string Invocateur::word() // Retourne le mot clef d'une commande
 {
-    return arr[0];
+    return cmdArray[0];
 }
 
 int Invocateur::x() // Retourne le premier parametre de la commande AVANCER
 {
-    return atoi(arr[1]);
+    const char * x = cmdArray[1].c_str();
+    return atoi(x);
 }
 
 int Invocateur::y() // Retourne le deuxieme parametre de la commande AVANCER
 {
-    return atoi(arr[2]);
+    const char * y = cmdArray[2].c_str();
+    return atoi(y);
 }
 
 string Invocateur::dir() // Retourne le parametre de la commande TOURNER
 {
-    return arr[1];
+    return cmdArray[1];
 }
 
-void Invocateur::split()
+void Invocateur::splitCmd()
 {
     int a = 0;
     int b = 0;
     int arrIndex = 0;
-    arr[0] = "";
+    cmdArray[0] = "";
     while (b < cmd.length())
     {
         if (cmd[b] == ' ')
         {
             while (a < b)
             {
-                arr[arrIndex] += cmd[a];
+                cmdArray[arrIndex] += cmd[a];
                 a++;
             }
             arrIndex++;
-            arr[arrIndex] = "";
+            cmdArray[arrIndex] = "";
         }
         b++;
     }
-}
-
-int main()
-{
-    Invocateur inv = Invocateur("AVANCER 4 5");
-    string* arr[] = {};
-    inv.split(arr);
-    std::cout << arr[0] << arr[1] << arr[2];
-    return 0;
 }

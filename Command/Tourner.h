@@ -15,6 +15,7 @@ private:
     string dir;
 public:
     Tourner(string d);
+    ~Tourner() { }
     virtual void execute();
 };
 

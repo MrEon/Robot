@@ -12,6 +12,7 @@ private:
     int x, y;
 public:
     Avancer(int, int);
+    ~Avancer() { }
     virtual void execute();
 };
 

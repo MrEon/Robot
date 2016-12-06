@@ -5,6 +5,12 @@
 #include <iostream>
 #include "Robot.h"
 #include "Etat.h"
+
+void Robot::avancer(int x, int y)
+{
+    
+}
+
 void Robot::saisir( Objet &o) {
     try {
         this->etat = etat.saisir();
