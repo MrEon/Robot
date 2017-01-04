@@ -18,6 +18,8 @@ private:
 
 public:
     static AVide instance();
+    Etat rencontrerPlot(Plot p);
+    void avancer(int x, int y);
 };
 
 

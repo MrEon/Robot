@@ -3,3 +3,8 @@
 //
 
 #include "Fige.h"
+#include <iostream>
+
+using namespace std;
+
+

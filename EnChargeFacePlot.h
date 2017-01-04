@@ -18,6 +18,10 @@ private:
 
 public:
     static EnChargeFacePlot instance();
+    void tourner(string direction);
+    int peser();
+    int evaluerPlot();
+    Etat poser();
 
 
 };

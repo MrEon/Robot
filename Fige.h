@@ -1,6 +1,3 @@
-//
-// Created by user on 14/11/16.
-//
 
 #ifndef ROBOT_FIGE_H
 #define ROBOT_FIGE_H
@@ -11,6 +8,7 @@
 
 class Fige: public Etat
 {
+    friend class Etat;
 private:
     Etat vieilEtat;
 public:
@@ -26,6 +24,4 @@ public:
         return vieilEtat;
     }
 };
-
-
 #endif //ROBOT_FIGE_H

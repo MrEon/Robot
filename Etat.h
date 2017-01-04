@@ -26,7 +26,7 @@ public:
     virtual void tourner(string direction){};
     virtual Etat poser(){};
     virtual int peser(){};
-    virtual void rencontrerPlot(Plot p){};
+    virtual Etat rencontrerPlot(Plot p){};
     virtual int evaluerPlot(){};
     virtual Etat figer();
 

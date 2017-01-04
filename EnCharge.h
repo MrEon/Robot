@@ -18,6 +18,9 @@ private:
 
 public:
     static EnCharge instance();
+    int peser();
+    Etat rencontrerPlot(Plot p);
+    void avancer(int x, int y);
 
 };
 

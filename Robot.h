@@ -13,7 +13,7 @@
 
 using namespace std;
 class Robot {
-private:
+protected:
     string direction;
     Position position;
     Etat etat;

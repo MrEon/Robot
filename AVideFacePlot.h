@@ -20,6 +20,7 @@ public:
     static AVideFacePlot instance();
     int evaluerPlot();
     Etat saisir();
+    void tourner(string direction);
 };
 
 

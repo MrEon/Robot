@@ -6,7 +6,12 @@
 
 AVideFacePlot* AVideFacePlot::singleton = new AVideFacePlot();
 
-int AVideFacePlot::evaluerPlot() { }
+void AVideFacePlot::tourner(string direction) {
+}
+
+int AVideFacePlot::evaluerPlot() {
+    return 2;
+}
 
 Etat AVideFacePlot::saisir() {
     return EnCharge::instance();
